@@ -1,0 +1,38 @@
+.section__client {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--icon-select-color);
+    fill: var(--icon-select-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
+  }
+
+  &:hover .section__client-icon,
+  &:focus .section__client-icon {
+    fill: var(--icon-select-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
+  }
+}
+
+.section__client-icon {
+  display: inline-flex;
+  width: 106px;
+  height: 60.04px;
+  justify-content: center;
+  align-self: center;
+  fill: var(--icon-color);
+  background-color: inherit;
+}

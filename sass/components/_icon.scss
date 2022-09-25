@@ -1,0 +1,16 @@
+.icon {
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: var(--link-color);
+    border-color: var(--icon-select-color);
+    transition: 0.2s;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    outline: none;
+  }
+}

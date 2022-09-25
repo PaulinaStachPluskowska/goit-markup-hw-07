@@ -1,0 +1,26 @@
+.contact__element {
+  font-family: inherit;
+  font-style: normal;
+  font-size: inherit;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--text-mdllight);
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 9px;
+  margin-top: 9px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: var(--link-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
+  }
+}
+
+.contact__element--color {
+  color: var(--text-light);
+}
