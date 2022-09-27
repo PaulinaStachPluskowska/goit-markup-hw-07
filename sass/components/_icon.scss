@@ -3,12 +3,11 @@
 
   &:hover,
   &:focus {
-    fill: var(--link-color);
-    border-color: var(--icon-select-color);
+    fill: $link-color;
+    border-color: $icon-select-color;
     transition: 0.2s;
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition;
     cursor: pointer;
 
     outline: none;

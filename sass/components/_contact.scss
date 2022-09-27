@@ -4,7 +4,7 @@
   font-size: inherit;
   line-height: 1.71em;
   letter-spacing: 0.03em;
-  color: var(--text-mdllight);
+  color: $text-mdllight-color;
   text-decoration: none;
   display: flex;
   margin-bottom: 9px;
@@ -13,14 +13,13 @@
   &:active,
   &:focus,
   &:hover {
-    color: var(--link-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $link-color;
+    @include transition;
 
     outline: none;
   }
 }
 
 .contact__element--color {
-  color: var(--text-light);
+  color: $text-light-color;
 }

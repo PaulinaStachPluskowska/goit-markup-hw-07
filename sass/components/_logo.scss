@@ -9,21 +9,20 @@
   &:active,
   &:focus,
   &:hover {
-    color: var(--link-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $link-color;
+    @include transition;
 
     outline: none;
   }
 }
 
-.logo--color {
-  color: var(--link-color);
+.logo--color-change {
+  color: $link-color;
   text-decoration: none;
 }
 
 .header__logo {
-  color: var(--text-verydark);
+  color: $text-verydark-color;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +33,7 @@
 }
 
 .footer__logo {
-  color: var(--text-light);
+  color: $text-light-color;
   text-decoration: none;
   display: flex;
   margin-bottom: 20px;

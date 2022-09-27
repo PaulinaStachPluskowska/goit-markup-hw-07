@@ -1,18 +1,18 @@
 .header {
   display: flex;
-  background-color: var(--background-light);
-  border-bottom: 1px solid var(--border-header-color);
+  background-color: $background-main-color;
+  border-bottom: 1px solid $border-header-color;
 }
 
 .header__container {
+  @extend .container;
   display: flex;
   justify-content: space-between;
 }
 
 .header__navigation {
+  @include flexbox;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   gap: 46px;
 }
 
@@ -30,16 +30,15 @@
   &:active,
   &:focus,
   &:hover {
-    color: var(--link-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $link-color;
+    @include transition;
 
     outline: none;
   }
 }
 
 .header__link--current-page {
-  color: var(--link-color);
+  color: $link-color;
 
   &::after {
     position: absolute;
@@ -51,34 +50,33 @@
     margin-top: 32px;
     margin-bottom: 1px;
     border-radius: 2px;
-    background-color: var(--link-color);
+    background-color: $link-color;
     cursor: unset;
     pointer-events: none;
   }
 }
 
-.header-contact {
+.header__contact {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox;
   padding-right: 15px;
 }
 
-.header-contact__element {
+.header__element {
   font-family: inherit;
   font-weight: medium;
   font-size: inherit;
   line-height: 1.14em;
   text-align: center;
   vertical-align: middle;
-  color: var(--text-dark);
+  color: $text-dark-color;
   text-decoration: none;
 
   &:hover .header__icon,
   &:focus .header__icon {
-    color: var(--link-color);
-    fill: var(--link-color);
-    border-color: var(--icon-select-color);
+    color: $icon-color;
+    fill: $icon-select-color;
+    border-color: $icon-select-color;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,7 +92,7 @@
   &:active,
   &:focus,
   &:hover {
-    color: var(--link-color);
+    color: $link-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -105,10 +103,9 @@
 .header__icon {
   margin-right: 10px;
   background-color: inherit;
-  fill: var(--text-dark);
+  fill: $text-dark-color;
+  @include flexbox;
   display: inline-flex;
   width: fit-content;
   height: fit-content;
-  justify-content: center;
-  align-items: center;
 }

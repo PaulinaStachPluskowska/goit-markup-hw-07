@@ -1,7 +1,7 @@
 body {
-  background: var(--background-main);
-  font-family: var(--font-family);
+  background: $background-main-color;
+  font-family: $font-family;
   font-size: 14px;
-  color: var(--color-main);
+  color: $text-main-color;
   width: 100%;
 }

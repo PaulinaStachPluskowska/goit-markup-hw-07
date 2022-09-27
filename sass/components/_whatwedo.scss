@@ -1,11 +1,29 @@
-.section--top {
+.section-thumb {
+  @extend .section;
   margin-top: -94px;
 }
-.section__list--position {
+
+.section-thumb__container {
+  @extend .container;
+}
+
+.section-thumb__title {
+  @include heading;
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.section-thumb__list {
+  @include list;
   justify-content: center;
 }
 
-.section__thumb {
+.section-thumb__thumb {
   position: relative;
   display: flex;
   bottom: 0;
@@ -17,7 +35,7 @@
   border-radius: 0px;
   z-index: 2;
 
-  & .section__label {
+  & .section-thumb__label {
     position: absolute;
     height: 70px;
     width: 370px;
@@ -26,9 +44,7 @@
     bottom: 0;
     margin: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox;
 
     font-family: inherit;
     font-style: inherit;
@@ -38,9 +54,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    background-color: var(--label-color);
+    background-color: $label-background-color;
 
-    color: var(--text-light);
+    color: $text-light-color;
     z-index: 2;
   }
 }
