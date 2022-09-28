@@ -1,14 +1,14 @@
-.section-team {
+.team {
   @extend .section;
   background: $background-light-color;
   width: auto;
 }
 
-.section-team_container {
+.team_container {
   @extend .container;
 }
 
-.section-team__title {
+.team__title {
   @include heading;
   font-size: 36px;
   line-height: 1.17em;
@@ -19,18 +19,18 @@
   margin-bottom: 50px;
 }
 
-.section-team__list {
+.team__list {
   @include list;
   justify-content: center;
 }
 
-.section-team__element {
+.team__element {
   background: $background-main-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-team__name {
+.team__name {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -42,7 +42,7 @@
   margin-bottom: 10px;
 }
 
-.section-team__position {
+.team__position {
   font-family: inherit;
   font-size: 16px;
   line-height: 1.18em;

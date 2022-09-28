@@ -1,12 +1,12 @@
-.section-clients {
+.clients {
   @extend .section;
 }
 
-.section-clients__container {
+.clients__container {
   @extend .container;
 }
 
-.section-clients__title {
+.clients__title {
   @include heading;
   font-size: 36px;
   line-height: 1.17em;
@@ -17,12 +17,12 @@
   margin-bottom: 50px;
 }
 
-.section-clients__list {
+.clients__list {
   @include list;
   justify-content: center;
 }
 
-.section-clients__element {
+.clients__element {
   @include flexbox;
   width: 170px;
   height: 92px;
@@ -38,15 +38,15 @@
     outline: none;
   }
 
-  &:hover .section-clients__icon,
-  &:focus .section-clients__icon {
+  &:hover .clients__icon,
+  &:focus .clients__icon {
     fill: $icon-select-color;
     @include transition;
     outline: none;
   }
 }
 
-.section-clients__icon {
+.clients__icon {
   @include flexbox;
   display: inline-flex;
   width: 106px;

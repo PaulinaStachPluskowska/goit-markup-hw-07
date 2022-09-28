@@ -1,21 +1,21 @@
-.button-section {
+.filters {
   @extend .container;
 }
 
-.button-section__wrap {
+.filters__wrap {
   @extend .section;
   background: inherit;
   padding-bottom: 0;
   margin-bottom: 50px;
 }
 
-.button-section__list {
+.filters__list {
   @include list;
   justify-content: center;
   gap: 8px;
 }
 
-.button-section__button {
+.filters__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;

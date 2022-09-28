@@ -1,13 +1,13 @@
-.section-thumb {
+.thumb {
   @extend .section;
   margin-top: -94px;
 }
 
-.section-thumb__container {
+.thumb__container {
   @extend .container;
 }
 
-.section-thumb__title {
+.thumb__title {
   @include heading;
   font-size: 36px;
   line-height: 1.17em;
@@ -18,12 +18,12 @@
   margin-bottom: 50px;
 }
 
-.section-thumb__list {
+.thumb__list {
   @include list;
   justify-content: center;
 }
 
-.section-thumb__thumb {
+.thumb__thumb {
   position: relative;
   display: flex;
   bottom: 0;
@@ -35,7 +35,7 @@
   border-radius: 0px;
   z-index: 2;
 
-  & .section-thumb__label {
+  & .thumb__label {
     position: absolute;
     height: 70px;
     width: 370px;
